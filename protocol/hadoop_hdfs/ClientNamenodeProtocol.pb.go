@@ -8,7 +8,7 @@ import fmt "fmt"
 import math "math"
 import _ "github.com/colinmarc/hdfs/protocol/hadoop_common"
 
-// Reference proto, json, and math imports to suppress error if they are not otherwise used.
+// Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
@@ -45,9 +45,6 @@ func (x CreateFlagProto) Enum() *CreateFlagProto {
 }
 func (x CreateFlagProto) String() string {
 	return proto.EnumName(CreateFlagProto_name, int32(x))
-}
-func (x CreateFlagProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *CreateFlagProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(CreateFlagProto_value, data, "CreateFlagProto")
@@ -89,9 +86,6 @@ func (x DatanodeReportTypeProto) Enum() *DatanodeReportTypeProto {
 func (x DatanodeReportTypeProto) String() string {
 	return proto.EnumName(DatanodeReportTypeProto_name, int32(x))
 }
-func (x DatanodeReportTypeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *DatanodeReportTypeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(DatanodeReportTypeProto_value, data, "DatanodeReportTypeProto")
 	if err != nil {
@@ -132,9 +126,6 @@ func (x SafeModeActionProto) Enum() *SafeModeActionProto {
 func (x SafeModeActionProto) String() string {
 	return proto.EnumName(SafeModeActionProto_name, int32(x))
 }
-func (x SafeModeActionProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *SafeModeActionProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(SafeModeActionProto_value, data, "SafeModeActionProto")
 	if err != nil {
@@ -172,9 +163,6 @@ func (x RollingUpgradeActionProto) Enum() *RollingUpgradeActionProto {
 func (x RollingUpgradeActionProto) String() string {
 	return proto.EnumName(RollingUpgradeActionProto_name, int32(x))
 }
-func (x RollingUpgradeActionProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *RollingUpgradeActionProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RollingUpgradeActionProto_value, data, "RollingUpgradeActionProto")
 	if err != nil {
@@ -205,9 +193,6 @@ func (x CacheFlagProto) Enum() *CacheFlagProto {
 }
 func (x CacheFlagProto) String() string {
 	return proto.EnumName(CacheFlagProto_name, int32(x))
-}
-func (x CacheFlagProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *CacheFlagProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(CacheFlagProto_value, data, "CacheFlagProto")
