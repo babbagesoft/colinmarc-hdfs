@@ -1,0 +1,24 @@
+# github.com/colinmarc/hdfs v1.1.3
+## explicit
+github.com/colinmarc/hdfs
+github.com/colinmarc/hdfs/protocol/hadoop_common
+github.com/colinmarc/hdfs/protocol/hadoop_hdfs
+github.com/colinmarc/hdfs/rpc
+# github.com/davecgh/go-spew v1.1.0
+## explicit
+github.com/davecgh/go-spew/spew
+# github.com/golang/protobuf v1.0.0
+## explicit
+github.com/golang/protobuf/proto
+# github.com/pborman/getopt v0.0.0-20170112200414-7148bc3a4c30
+## explicit
+github.com/pborman/getopt
+# github.com/pmezard/go-difflib v1.0.0
+## explicit
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/testify v1.2.0
+## explicit
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/require
+# golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+## explicit
